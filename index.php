@@ -18,7 +18,7 @@ require_once __DIR__ . '/includes/header.php';
 		<div class="card">
 			<div class="card-body">
 				<h5 class="card-title">Notes</h5>
-				<p class="card-text">Database defaults are in `includes/db.php`. Create the `users` table before registering.</p>
+				<p class="card-text">Registration is currently in testing phase.</p>
 			</div>
 		</div>
 	</div>

@@ -1,12 +1,29 @@
 -- Thres Student Portal schema
--- Instructions:
--- 1) Edit DB credentials in `includes/db.php` to match your MySQL server.
--- 2) Create the database (example):
---    CREATE DATABASE thres_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
--- 3) Import this file into the database, e.g. via MySQL CLI or PhpMyAdmin.
--- To create an admin password hash from PHP CLI:
---    php -r "echo password_hash('Admin123!', PASSWORD_DEFAULT) . PHP_EOL;"
--- Then use the produced hash in the INSERT below (replace <PASSWORD_HASH>).
+-- 
+-- SETUP INSTRUCTIONS:
+-- 
+-- 1) EDIT DATABASE CREDENTIALS
+--    Open includes/db.php and update the MySQL server details to match your local setup.
+-- 
+-- 2) CREATE THE DATABASE IN PhpMyAdmin
+--    - Go to phpMyAdmin home (top left)
+--    - Click "New" or "Create database"
+--    - Name: thres_db
+--    - Charset: utf8mb4
+--    - Collation: utf8mb4_unicode_ci
+--    - Click "Create"
+-- 
+-- 3) IMPORT THIS FILE INTO THE DATABASE
+--    - Select thres_db from the left sidebar
+--    - Click "Import" tab
+--    - Upload this file (schema.sql) or paste its contents
+--    - Click "Import" button
+-- 
+-- 4) CREATE AN ADMIN USER (OPTIONAL)
+--    Run this command in PHP CLI to generate a password hash:
+--       php -r "echo password_hash('Admin123!', PASSWORD_DEFAULT) . PHP_EOL;"
+--    Copy the output hash and replace <PASSWORD_HASH> in the example INSERT statement below.
+--    Then uncomment and run it in phpMyAdmin to create your admin account.
 
 SET FOREIGN_KEY_CHECKS=0;
 
